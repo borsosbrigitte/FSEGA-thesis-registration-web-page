@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Közgazdaság- és Gazdálkodástudományi Magyar Intézet</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="shortcut icon" href="../images/favicon.png" />
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <a href="../index.html"><img src="../images/fsega_logo.png"></a>
+    </div>
+    <div id="search" class="fl_right">
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <legend>Search:</legend>
+          <input type="search" value="" placeholder="Keresés&hellip;">
+          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Főoldal</a></li>
+      <li class="active"><a href="../pages/inscriere.html">Feliratkozás</a></li>
+      <li><a href="../pages/deadlines.html">Határidők</a></li>
+      <li><a class="drop" href="#">Dolgozatvédés</a>
+        <ul>
+          <li><a href="#">Gazdasági informatika</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Menedzsment</a></li>
+          <li><a href="#">Pénzügy és bank</a></li>
+        </ul>
+      </li>
+      <li><a href="../pages/alumni.html">Alumni</a></li>
+      <li><a class="drop" href="#">Kontakt</a>
+        <ul>
+          <li><a href="#">Gyakori kérdések</a></li>
+          <li><a href="#">Elérhetőségek</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded" style="background-image:url('../images/fsega_interior_blur.jpg');">
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="contactdiv">  
+
+      <h3>FELIRATKOZÁSI ŰRLAP
+</h3>
+      
+      <form id="contact" name="contactForm" action="" method="post" >
+        <p>Családnév:</p>
+        <input type="text" id="csaladnev">
+        <p>Keresztnév:</p>
+        <input type="text" id="keresztnev">
+        <p>Azonosító szám :</p> 
+        <input type="number" id="azonositoszam">
+        <p>CNP:</p> 
+        <input type="number" id="cnp">
+        <p>Szakirány:</p>
+        <select>
+          <option value="gi">Gazdasági informatika</option>
+          <option value="mk">Marketing</option>
+          <option value="mg">Menedzsment</option>
+          <option value="pb">Pénzügy és bank</option>
+        </select>
+        <p>Tanárok:</p>
+        <select>
+          <option value="kgye">dr. Kovács Gyöngyvér Emese</option>
+          <option value="amc">dr. Avornicului Mihai Constantin</option>
+          <option value="fkpsz">dr. Fekete-Pali-Pista Szilveszter</option>
+          <option value="hr">dr. Horváth Réka</option>
+          <option value="mi">dr. Molnár Iudita</option>
+          <option value="szs">dr. Săplăcan Zsuzsa</option>
+          <option value="szl">dr. Szász Levente
+</option>
+
+        </select>
+        <p>Témajavaslatok:</p>
+        <select>
+          <option value="crm">CRM rendszer fejlesztése</option>
+          <option value="cms">Web alapú tartalomkezelő (CMS) rendszerek</option>
+          <option value="ona">Online ajánlórendszerek</option>
+          <option value="xbrl">XBRL Data Validation</option>
+          <option value="tzds">Internetes lehetőségek a tőzsdei elemzésben</option>
+          <option value="trnd">Trendek a romániai elektronikus kereskedelemben</option>
+          <option value="onm">Online marketing egy szállodalánc esetében</option>
+          <option value="kkv">A KKV-k online hitelezése</option>
+          <option value="lzng">A lízingügyletek számviteli elszámolása</option>
+          <option value="alg">Tanuló algoritmusok és a játékok</option>
+          <option value="eua">Az EU regionális/kohéziós politikája</option>
+          <option value="eub">Az EU helye a világgazdaságban</option>
+          <option value="hai">A hálózatos iparágak szabályozása</option>
+          <option value="onms">Online marketing stratégia</option>
+          <option value="inn">Innováció az eladásban</option>
+          <option value="other">A hallgató által javasolt téma</option>
+        </select>
+
+        <input id="submitbutton" type="button" onclick="return validateForm()" value="Submit">
+      </form>
+      <h3 id="welcome">Minden rendben, Csaladnev Keresztnev</h3>
+</div>
+  </div>
+</div>
+
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/validateform.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="../layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+</body>
+</html>
