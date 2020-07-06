@@ -1,0 +1,6 @@
+function disp_promt(){
+	var name= prompt("Add meg a neved", "Nevtelen")
+	if (name!=null && name!=""){
+	document.write("Szia"+ name + "!")
+	}
+}
